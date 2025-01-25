@@ -37,3 +37,7 @@ After client detects disconnection, it tries to reconnect and crashes:
                                                                                                     Process: page.smirnov.kmqttcrash, PID: 23843
 2025-01-25 16:50:07.885 23843-23878 Process                 page.smirnov.kmqttcrash              I  Sending signal. PID: 23843 SIG: 9
 ```
+
+It will also instantly crash if you will re-launch it.
+
+Seems that it's not handling network access absence properly while connecting.
